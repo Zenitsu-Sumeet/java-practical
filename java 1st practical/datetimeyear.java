@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 class datetimeyear{
     public static void main(String[] args) {
+        int date;
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter year:");
         int year = sc.nextInt();
@@ -9,13 +10,23 @@ class datetimeyear{
         int month = sc.nextInt();
         System.out.println("Enter day:");
         int day = sc.nextInt();
+        if(month<=0||month>12||day>31)
+{
+    System.out.println("invalid month");
+    System.out.println(year + "/" + month + "/" + day);
+}
+        }
+        else{
+            System.out.println("invalid day");
+            System.out.println(year + "/" + month + "/" + date);
+        }
         System.out.println(year + "/" + month + "/" + day);
         switch (month) {
             case 1:
-            System.out.println(day + "th " + " jan" + "" + year);
+            System.out.println(day + "st " + " jan" + "" + year);
             break;
             case 2:
-            System.out.println(day + "th " + " feb" + " " + year);
+            System.out.println(day + "sd " + " feb" + " " + year);
             break;
             case 3:
             System.out.println(day + "th " + " march" + " " + year);
