@@ -10,7 +10,6 @@ public class add {
         b = in.nextInt();
         System.out.print(a);
         System.out.print("+");
-
         System.out.print(b );
         System.out.println(" " + (a+b));
     }
