@@ -7,13 +7,24 @@ public class palindrome {
 	 int a;
 	 System.out.println("Enter a number");
      a = in.nextInt();
-	 System.out.println(isPalindrome(a));
+	 isPalindrome(a);
     }
-	public static boolean isPalindrome(int a) {
-		String s = Integer.toString(a);
-        String rev = new StringBuilder(s).reverse().toString();
-        return s.equals(rev);
+	public static void isPalindrome(int a) {
+        int rev = 0;
+        while (a> 0) {
+            int rem = a % 10;
+            a /= 10;
+            rev = rev * 10 + rem;
+        }
+        if (rev == a) {
+            System.out.println(" palindrome");
+        }
+        else {
+            System.out.println(" not Palindrome");
+        }
+    
+}
 	}
 
     
-}
+
