@@ -11,13 +11,19 @@ public class arrayuser {
         }
 
         System.out.println(Arrays.toString(arr));
-        int[][] arr2 = new int[3][];
+        int[][] arr2 = new int[3][3];
         for(int i=0;i<3;i++){
-            for(int j=0;j<arr2[i][].len;j++){
+            for(int j=0;j<3;j++){
                 arr2[i][j] = in.nextInt();
             }
         }
-        System.out.println(Arrays.deepToString(arr2));
+        for(int i=0;i<3;i++){
+            for(int j=0;j<3;j++){
+                System.out.print(arr2[i][j]+" ");
+            }
+            System.out.println();
+        }
+        
 
     }
 
