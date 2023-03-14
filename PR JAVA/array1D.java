@@ -8,7 +8,6 @@ public class array1D {
                         {6,7,8,9,10},
                         {11,12,13,14,15}};
         System.out.println(Arrays.deepToString(arr2));
-
-            
+    
     }
 }
