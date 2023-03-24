@@ -4,13 +4,12 @@ abstract class test{
 class service extends test{
     void add(){
         System.out.println("abstract method");
-
     }
     public void m1(){
         System.out.println("method");
     }
     public void m2(){
-        System.out.println(" class method 2");
+        System.out.println("class method 2");
 
     }
 }
