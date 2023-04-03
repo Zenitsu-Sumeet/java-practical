@@ -1,5 +1,3 @@
-
-
 class join extends Thread{
     public void run(){
         try{
