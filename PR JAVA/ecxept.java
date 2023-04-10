@@ -1,4 +1,4 @@
-class test
+public class ecxept
 {
 	public static void main(String[] args)
 	{
